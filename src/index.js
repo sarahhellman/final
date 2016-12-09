@@ -19,8 +19,8 @@ var theatres = require('./theatres.json')
 // Firebase
 var Rebase = require('re-base')
 var base = Rebase.createClass({
-  apiKey: "AIzaSyAZeceh22P7PMGKSWaqlAitDvEtjbuQJek",   // replace with your Firebase application's API key
-  databaseURL: "https://buyflixfinal.firebaseio.com/", // replace with your Firebase application's database URL
+  apiKey: "AIzaSyAco1UkK-1nZnhVfFkpIfizOisIwLyqzRQ",   // replace with your Firebase application's API key
+  databaseURL: "https://final-4933f.firebaseio.com/", // replace with your Firebase application's database URL
 })
 
 var MovieList = React.createClass({
@@ -171,7 +171,7 @@ var App = React.createClass({
     // You should really look at https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
 
     var movieListView = movieData.sort(this.movieCompareByTitle)
-    
+
 
       this.setState({
       currentView: view,
